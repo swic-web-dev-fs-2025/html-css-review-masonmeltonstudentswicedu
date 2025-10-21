@@ -1,0 +1,16 @@
+CSS Fundamentals Review - Knowledge Check
+
+1. When would you choose Flexbox over Grid?
+Use Flexbox for one-dimensional layouts (rows or columns).
+
+2. What's the difference between justify-content and align-items in Flexbox?
+justify-content = main axis alignment; align-items = cross axis alignment.
+
+3. How do you create equal-width columns with Grid?
+Use grid-template-columns: 1fr 1fr 1fr;  (each column shares equal space).
+
+4. What's the purpose of the gap property?
+Adds even spacing between Flexbox or Grid items.
+
+5. How does the box model affect element spacing?
+It defines how content, padding, border, and margin determine total element size.
