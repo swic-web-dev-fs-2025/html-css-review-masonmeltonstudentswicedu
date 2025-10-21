@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CSS Fundamentals Review</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <header class="site-header">
@@ -20,61 +20,46 @@
   </header>
 
   <main id="main">
-    <section id="intro" class="hero" aria-labelledby="intro-heading">
-      <div class="hero-inner">
-        <h2 id="intro-heading">Introduction</h2>
-        <aside class="callout">
-          <p>Look around your room—some things are in rows, others in columns, and some in grids. CSS layout works the same way!</p>
-        </aside>
-        <p>Before Tailwind, understand the CSS under the hood. HTML is the skeleton; CSS is the skin and muscle.</p>
-        <ul>
-          <li>Review essential CSS concepts</li>
-          <li>Master Flexbox and Grid layouts</li>
-          <li>Build a foundation for Tailwind</li>
-        </ul>
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction</h2>
+      <aside>
+        <p>Look around your room—rows, columns, and grids. CSS layout works the same way!</p>
+      </aside>
+      <p>Before Tailwind CSS, it’s important to understand how CSS handles structure and presentation.</p>
+      <ul>
+        <li>Review essential CSS concepts</li>
+        <li>Master Flexbox and Grid layouts</li>
+        <li>Build a foundation for Tailwind</li>
+      </ul>
 
-        <!-- FLEXBOX requirement: button group -->
-        <div class="btn-group" role="group" aria-label="Quick actions">
-          <button type="button" class="btn">Selectors</button>
-          <button type="button" class="btn">Box Model</button>
-          <button type="button" class="btn">Flexbox</button>
-          <button type="button" class="btn">Grid</button>
-        </div>
+      <!-- Flexbox example -->
+      <div class="btn-group" role="group" aria-label="Quick actions">
+        <button type="button" class="btn">Selectors</button>
+        <button type="button" class="btn">Box Model</button>
+        <button type="button" class="btn">Flexbox</button>
+        <button type="button" class="btn">Grid</button>
       </div>
     </section>
 
-    <section id="concepts" aria-labelledby="concepts-heading">
-      <h2 id="concepts-heading">Core Concepts</h2>
+    <section id="concepts">
+      <h2>Core Concepts</h2>
 
-      <article aria-labelledby="selectors-heading">
-        <h3 id="selectors-heading">CSS Selectors</h3>
-        <p>Selectors target elements to style. You’ll use these with <code>querySelector()</code> and Tailwind classes.</p>
-        <pre><code>/* Element selector */
-h1 { color: blue; }
-
-/* Class selector */
-.highlight { background: yellow; }
-
-/* ID selector */
-#header { font-size: 24px; }
-
-/* Descendant selector */
-div p { margin: 1rem; }
-
-/* Child selector */
-ul > li { list-style: none; }
-
-/* Attribute selector */
-input[type="text"] { border: 1px solid gray; }</code></pre>
+      <article>
+        <h3>CSS Selectors</h3>
+        <pre><code>/* Element */ h1 { color: blue; }
+/* Class   */ .highlight { background: yellow; }
+/* ID      */ #header { font-size: 24px; }
+/* Desc    */ div p { margin: 1rem; }
+/* Child   */ ul > li { list-style: none; }
+/* Attr    */ input[type="text"] { border: 1px solid gray; }</code></pre>
       </article>
 
-      <article aria-labelledby="box-model-heading">
-        <h3 id="box-model-heading">The Box Model</h3>
+      <article>
+        <h3>The Box Model</h3>
         <p>Every element is a box with <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>.</p>
       </article>
     </section>
 
-    <!-- GRID requirement: multi-column card grid -->
     <section id="gallery" aria-labelledby="gallery-heading">
       <h2 id="gallery-heading">Example Card Grid</h2>
       <div class="card-grid">
@@ -90,9 +75,9 @@ input[type="text"] { border: 1px solid gray; }</code></pre>
     <section id="practice">
       <h2>Hands-On</h2>
       <ol>
-        <li>Build a Flexbox nav or button group (done above).</li>
-        <li>Build a 3-column Grid that wraps (done above).</li>
-        <li>Make it responsive (next section’s media queries).</li>
+        <li>Build a Flexbox nav or button group (✅ done).</li>
+        <li>Build a 3-column Grid that wraps (✅ done).</li>
+        <li>Make it responsive (see CSS below).</li>
       </ol>
     </section>
   </main>
