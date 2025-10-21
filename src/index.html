@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Fundamentals Review</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>CSS Fundamentals Review</h1>
+    <nav aria-label="Primary" class="main-nav">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="intro" class="hero" aria-labelledby="intro-heading">
+      <div class="hero-inner">
+        <h2 id="intro-heading">Introduction</h2>
+        <aside class="callout">
+          <p>Look around your room—some things are in rows, others in columns, and some in grids. CSS layout works the same way!</p>
+        </aside>
+        <p>Before Tailwind, understand the CSS under the hood. HTML is the skeleton; CSS is the skin and muscle.</p>
+        <ul>
+          <li>Review essential CSS concepts</li>
+          <li>Master Flexbox and Grid layouts</li>
+          <li>Build a foundation for Tailwind</li>
+        </ul>
+
+        <!-- FLEXBOX requirement: button group -->
+        <div class="btn-group" role="group" aria-label="Quick actions">
+          <button type="button" class="btn">Selectors</button>
+          <button type="button" class="btn">Box Model</button>
+          <button type="button" class="btn">Flexbox</button>
+          <button type="button" class="btn">Grid</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="concepts" aria-labelledby="concepts-heading">
+      <h2 id="concepts-heading">Core Concepts</h2>
+
+      <article aria-labelledby="selectors-heading">
+        <h3 id="selectors-heading">CSS Selectors</h3>
+        <p>Selectors target elements to style. You’ll use these with <code>querySelector()</code> and Tailwind classes.</p>
+        <pre><code>/* Element selector */
+h1 { color: blue; }
+
+/* Class selector */
+.highlight { background: yellow; }
+
+/* ID selector */
+#header { font-size: 24px; }
+
+/* Descendant selector */
+div p { margin: 1rem; }
+
+/* Child selector */
+ul > li { list-style: none; }
+
+/* Attribute selector */
+input[type="text"] { border: 1px solid gray; }</code></pre>
+      </article>
+
+      <article aria-labelledby="box-model-heading">
+        <h3 id="box-model-heading">The Box Model</h3>
+        <p>Every element is a box with <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>.</p>
+      </article>
+    </section>
+
+    <!-- GRID requirement: multi-column card grid -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Example Card Grid</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Card 1</h3><p>Short blurb.</p></article>
+        <article class="card"><h3>Card 2</h3><p>Short blurb.</p></article>
+        <article class="card"><h3>Card 3</h3><p>Short blurb.</p></article>
+        <article class="card"><h3>Card 4</h3><p>Short blurb.</p></article>
+        <article class="card"><h3>Card 5</h3><p>Short blurb.</p></article>
+        <article class="card"><h3>Card 6</h3><p>Short blurb.</p></article>
+      </div>
+    </section>
+
+    <section id="practice">
+      <h2>Hands-On</h2>
+      <ol>
+        <li>Build a Flexbox nav or button group (done above).</li>
+        <li>Build a 3-column Grid that wraps (done above).</li>
+        <li>Make it responsive (next section’s media queries).</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      <p>Author: Mason C. Melton</p>
+      <p><a href="mailto:mason@example.com">mason@example.com</a></p>
+    </address>
+  </footer>
+</body>
+</html>

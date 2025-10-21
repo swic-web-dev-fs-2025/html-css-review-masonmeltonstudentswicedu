@@ -1,0 +1,101 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f8f9fa;
+  padding: 1rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2b2d42;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;              
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main-nav a:hover { text-decoration: underline; }
+
+/* Flexbox: button group (meets requirement) */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;         
+}
+.btn {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  padding: 0.5rem 0.75rem;  
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover { background: #f1f5f9; }
+
+/* Grid: main layout (multi-column on larger screens) */
+main {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/* Sections as cards */
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+/* Grid: card gallery */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;                 
+  margin-top: 0.75rem;
+}
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+/* Callout */
+aside {
+  background: #e6f0ff;
+  border-left: 4px solid #3867d6;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background: #2b2d42;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* Responsive (mobile → desktop) */
+@media (min-width: 768px) {
+  main { grid-template-columns: 1fr 1fr; } /* two columns */
+}
